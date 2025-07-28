@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: hello-service-monitor
+  namespace: monitoring
+  labels:
+    release: kind-prometheus   # ✅ This is what you were missing
+spec:
+  selector:
+    matchLabels:
+      app: hello-world          # ✅ This matches your service
+  endpoints:
+    - port: metrics             # ✅ Must match service port name
+      interval: 15s
