@@ -1,0 +1,9 @@
+kind: DevOpsBatch
+apiVersion: trainwithshubham.com/v1
+metadata:
+ name: devbatch1
+spec:
+ name: "DevopsBatch1"
+ mode: "Online"
+ platform: "meet"
+ duration: "3-month"
