@@ -1,0 +1,13 @@
+{
+    "name": "chat-app-stack",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@pulumi/docker": "^4.8.0",
+        "@pulumi/kubernetes": "^4.23.0",
+        "@pulumi/pulumi": "^3.173.0"
+    }
+}
