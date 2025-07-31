@@ -1,3 +1,0 @@
-W0724 12:24:06.704187       1 client_config.go:618] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
-{"level":"info","msg":"patching webhook configurations 'ingress-nginx-admission' mutating=false, validating=true, failurePolicy=Fail","source":"k8s/k8s.go:118","time":"2025-07-24T12:24:06Z"}
-{"level":"info","msg":"Patched hook(s)","source":"k8s/k8s.go:138","time":"2025-07-24T12:24:06Z"}

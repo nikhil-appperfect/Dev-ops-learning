@@ -1,2 +1,39 @@
-*.pyc
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 venv/
+env/
+ENV/
+
+# Logs
+logs/
+test_logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# GitLab CI
+.gitlab-ci.yml
+GITLAB_CI_GUIDE.md
+
+# Logging files
+test_logging.py
+run_log_collection.py
+log_collector.py
+LOGGING_README.md
+
+# Helm files (since using Helm for Prometheus/Grafana)
+get_helm.sh
+logging.py
+monitoring.py
