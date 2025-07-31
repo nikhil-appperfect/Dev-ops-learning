@@ -519,4 +519,4 @@ For questions, issues, or contributions:
 - Review the logging documentation
 - Test with the provided scripts
 
-**Happy Kubernetes Infrastructure as Code! 🚀** 
+**Happy Kubernetes Infrastructure as Code! 🚀**
