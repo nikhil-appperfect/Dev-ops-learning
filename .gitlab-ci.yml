@@ -65,7 +65,7 @@ validate_python:
 
 validate_kubernetes:
   stage: validate
-  image: bitnami/kubectl:latest
+  image: python:3.9-slim
   before_script:
     - python3 --version
     - python3 -m pip install --upgrade pip
@@ -75,6 +75,10 @@ validate_kubernetes:
     - curl -fsSL https://get.pulumi.com | sh
     - export PATH="$PATH:$HOME/.pulumi/bin"
     - pulumi version
+    - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+    - chmod +x kubectl
+    - mv kubectl /usr/local/bin/
+    - kubectl version --client
   script:
     - echo "Validating Kubernetes configurations"
     - kubectl apply --dry-run=client -f K8s/servicemonitor.yaml
@@ -305,7 +309,7 @@ deploy_production:
 
 monitor_deployment:
   stage: monitor
-  image: bitnami/kubectl:latest
+  image: python:3.9-slim
   before_script:
     - python3 --version
     - python3 -m pip install --upgrade pip
@@ -315,6 +319,10 @@ monitor_deployment:
     - curl -fsSL https://get.pulumi.com | sh
     - export PATH="$PATH:$HOME/.pulumi/bin"
     - pulumi version
+    - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+    - chmod +x kubectl
+    - mv kubectl /usr/local/bin/
+    - kubectl version --client
   script:
     - echo "Monitoring deployment health"
     - kubectl get pods --all-namespaces -o wide
@@ -332,7 +340,20 @@ monitor_deployment:
 
 monitor_monitoring_stack:
   stage: monitor
-  image: curlimages/curl:latest
+  image: python:3.9-slim
+  before_script:
+    - python3 --version
+    - python3 -m pip install --upgrade pip
+    - python3 -m venv venv
+    - source venv/bin/activate
+    - pip install -r requirements.txt
+    - curl -fsSL https://get.pulumi.com | sh
+    - export PATH="$PATH:$HOME/.pulumi/bin"
+    - pulumi version
+    - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+    - chmod +x kubectl
+    - mv kubectl /usr/local/bin/
+    - kubectl version --client
   script:
     - echo "Monitoring the monitoring stack"
     - echo "Checking Prometheus status"
