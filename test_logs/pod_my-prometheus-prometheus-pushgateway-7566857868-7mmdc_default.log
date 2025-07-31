@@ -1,0 +1,4 @@
+ts=2025-07-31T08:32:18.865Z level=info caller=main.go:82 msg="starting pushgateway" version="(version=1.11.1, branch=HEAD, revision=aff0d834b730375fc965135e3e2d17d15f82a76f)"
+ts=2025-07-31T08:32:18.866Z level=info caller=main.go:83 msg="Build context" build_context="(go=go1.24.1, platform=linux/amd64, user=root@672a818fb093, date=20250409-13:24:09, tags=unknown)"
+ts=2025-07-31T08:32:18.870Z level=info caller=tls_config.go:347 msg="Listening on" address=[::]:9091
+ts=2025-07-31T08:32:18.870Z level=info caller=tls_config.go:350 msg="TLS is disabled." http2=false address=[::]:9091

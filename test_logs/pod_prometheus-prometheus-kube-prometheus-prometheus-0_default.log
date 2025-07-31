@@ -1,0 +1,75 @@
+time=2025-07-31T09:51:52.698Z level=INFO source=main.go:1544 msg="updated GOGC" old=100 new=75
+time=2025-07-31T09:51:52.730Z level=INFO source=main.go:676 msg="Leaving GOMAXPROCS=4: CPU quota undefined" component=automaxprocs
+time=2025-07-31T09:51:52.731Z level=INFO source=memlimit.go:198 msg="GOMEMLIMIT is updated" component=automemlimit package=github.com/KimMachineGun/automemlimit/memlimit GOMEMLIMIT=7398988185 previous=9223372036854775807
+time=2025-07-31T09:51:52.732Z level=INFO source=main.go:769 msg="Starting Prometheus Server" mode=server version="(version=3.5.0, branch=HEAD, revision=8be3a9560fbdd18a94dedec4b747c35178177202)"
+time=2025-07-31T09:51:52.732Z level=INFO source=main.go:774 msg="operational information" build_context="(go=go1.24.5, platform=linux/amd64, user=root@4451b64cb451, date=20250714-16:15:23, tags=netgo,builtinassets)" host_details="(Linux 6.10.14-linuxkit #1 SMP PREEMPT_DYNAMIC Sat May 17 08:29:19 UTC 2025 x86_64 prometheus-prometheus-kube-prometheus-prometheus-0 (none))" fd_limits="(soft=1048576, hard=1048576)" vm_limits="(soft=unlimited, hard=unlimited)"
+time=2025-07-31T09:51:53.769Z level=INFO source=web.go:656 msg="Start listening for connections" component=web address=0.0.0.0:9090
+time=2025-07-31T09:51:53.883Z level=INFO source=tls_config.go:347 msg="Listening on" component=web address=[::]:9090
+time=2025-07-31T09:51:53.902Z level=INFO source=tls_config.go:386 msg="TLS is disabled." component=web http2=false address=[::]:9090
+time=2025-07-31T09:51:54.013Z level=INFO source=main.go:1288 msg="Starting TSDB ..."
+time=2025-07-31T09:51:54.631Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1753874572922 maxt=1753876800000 ulid=01K1FFSXG250N5EGVWSKMBR6Q9
+time=2025-07-31T09:51:54.634Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1753876800259 maxt=1753884000000 ulid=01K1FFSYAK73QBNMTX9XMAB87X
+time=2025-07-31T09:51:54.638Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1753940286998 maxt=1753941600000 ulid=01K1FT3AX4FP4FA5D8T7DT98AS
+time=2025-07-31T09:51:54.647Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1753941600202 maxt=1753948800000 ulid=01K1FVBDCDFQBPM9PXDVENDGQ8
+time=2025-07-31T09:51:56.649Z level=INFO source=head.go:657 msg="Replaying on-disk memory mappable chunks if any" component=tsdb
+time=2025-07-31T09:51:57.251Z level=INFO source=head.go:744 msg="On-disk memory mappable chunks replay completed" component=tsdb duration=600.689751ms
+time=2025-07-31T09:51:57.251Z level=INFO source=head.go:752 msg="Replaying WAL, this may take a while" component=tsdb
+time=2025-07-31T09:52:05.148Z level=WARN source=head_wal.go:450 msg="Unknown series references" component=tsdb series=26076 samples=49973 exemplars=0 histograms=0 metadata=0 tombstones=0
+time=2025-07-31T09:52:05.400Z level=INFO source=head.go:789 msg="WAL checkpoint loaded" component=tsdb
+time=2025-07-31T09:52:12.702Z level=INFO source=head.go:825 msg="WAL segment loaded" component=tsdb segment=4 maxSegment=7 duration=7.302229168s
+time=2025-07-31T09:52:28.708Z level=INFO source=head.go:825 msg="WAL segment loaded" component=tsdb segment=5 maxSegment=7 duration=16.00560979s
+time=2025-07-31T09:52:48.692Z level=INFO source=head.go:825 msg="WAL segment loaded" component=tsdb segment=6 maxSegment=7 duration=19.92032199s
+time=2025-07-31T09:52:48.817Z level=INFO source=head.go:825 msg="WAL segment loaded" component=tsdb segment=7 maxSegment=7 duration=92.127045ms
+time=2025-07-31T09:52:48.824Z level=INFO source=head.go:862 msg="WAL replay completed" component=tsdb checkpoint_replay_duration=8.148409671s wal_replay_duration=43.436414913s wbl_replay_duration=339ns chunk_snapshot_load_duration=0s mmap_chunk_replay_duration=600.689751ms total_replay_duration=52.185611979s
+time=2025-07-31T09:52:49.685Z level=INFO source=main.go:1309 msg="filesystem information" fs_type=EXT4_SUPER_MAGIC
+time=2025-07-31T09:52:49.685Z level=INFO source=main.go:1312 msg="TSDB started"
+time=2025-07-31T09:52:49.691Z level=INFO source=main.go:1497 msg="Loading configuration file" filename=/etc/prometheus/config_out/prometheus.env.yaml
+time=2025-07-31T09:52:51.987Z level=INFO source=kubernetes.go:312 msg="Using pod service account via in-cluster config" component="discovery manager scrape" discovery=kubernetes config=serviceMonitor/default/prometheus-kube-prometheus-kubelet/0
+time=2025-07-31T09:52:52.418Z level=INFO source=kubernetes.go:312 msg="Using pod service account via in-cluster config" component="discovery manager scrape" discovery=kubernetes config=serviceMonitor/default/prometheus-kube-prometheus-prometheus/1
+time=2025-07-31T09:52:52.427Z level=INFO source=kubernetes.go:312 msg="Using pod service account via in-cluster config" component="discovery manager notify" discovery=kubernetes config=config-0
+time=2025-07-31T09:52:52.805Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T09:52:52.805Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T09:52:52.878Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T09:52:52.935Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T09:52:53.395Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T09:52:53.395Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T09:52:54.714Z level=INFO source=main.go:1537 msg="Completed loading of configuration file" db_storage=2.33µs remote_storage=8.767µs web_handler=12.89026ms query_engine=9.779762ms scrape=651.268198ms scrape_sd=458.489321ms notify=6.814235ms notify_sd=309.797µs rules=2.28404475s tracing=11.576µs filename=/etc/prometheus/config_out/prometheus.env.yaml totalDuration=5.036031144s
+time=2025-07-31T09:52:54.715Z level=INFO source=main.go:1273 msg="Server is ready to receive web requests."
+time=2025-07-31T09:52:54.715Z level=INFO source=manager.go:176 msg="Starting rule manager..." component="rule manager"
+time=2025-07-31T09:59:18.562Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:02:24.498Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:02:32.147Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:04:12.533Z level=INFO source=main.go:1497 msg="Loading configuration file" filename=/etc/prometheus/config_out/prometheus.env.yaml
+time=2025-07-31T10:04:12.638Z level=INFO source=kubernetes.go:312 msg="Using pod service account via in-cluster config" component="discovery manager scrape" discovery=kubernetes config=serviceMonitor/demo-namespace/nginx-metrics-monitor/0
+time=2025-07-31T10:04:12.731Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:04:12.750Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:04:12.802Z level=INFO source=main.go:1537 msg="Completed loading of configuration file" db_storage=2.124µs remote_storage=1.871µs web_handler=541ns query_engine=2.283µs scrape=42.851833ms scrape_sd=70.590779ms notify=3.232736ms notify_sd=23.042µs rules=104.574457ms tracing=349.455µs filename=/etc/prometheus/config_out/prometheus.env.yaml totalDuration=270.416775ms
+time=2025-07-31T10:08:16.986Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:09:12.751Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:09:48.449Z level=ERROR source=manager.go:476 msg="Error sending alerts" component=notifier alertmanager=http://10.244.0.158:9093/api/v2/alerts count=1 err="Post \"http://10.244.0.158:9093/api/v2/alerts\": context deadline exceeded"
+time=2025-07-31T10:10:18.549Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:11:30.253Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=46
+time=2025-07-31T10:12:02.052Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:14:16.050Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:14:45.843Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:16:23.686Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=138
+time=2025-07-31T10:20:05.312Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:20:40.088Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:21:26.370Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=184
+time=2025-07-31T10:21:31.083Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=23
+time=2025-07-31T10:21:55.922Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:23:26.062Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=161
+time=2025-07-31T10:23:31.313Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=23
+time=2025-07-31T10:23:38.398Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:29:27.178Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=115
+time=2025-07-31T10:29:56.138Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:30:19.476Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:30:22.207Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:31:21.494Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=115
+time=2025-07-31T10:32:23.207Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:35:25.584Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:36:05.651Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=69
+time=2025-07-31T10:36:38.166Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:37:07.110Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=46
+time=2025-07-31T10:38:50.640Z level=INFO source=warnings.go:70 msg="v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice" component=k8s_client_runtime
+time=2025-07-31T10:38:54.040Z level=WARN source=scrape.go:1903 msg="Error on ingesting out-of-order samples" component="scrape manager" scrape_pool=serviceMonitor/default/prometheus-kube-prometheus-kubelet/1 target=https://192.168.49.2:10250/metrics/cadvisor num_dropped=115

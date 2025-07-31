@@ -1,0 +1,188 @@
+{
+  "log_directory": "logs",
+  "log_files": [
+    {
+      "name": "pod_kube-scheduler-minikube_kube-system.log",
+      "size_bytes": 16652,
+      "line_count": 48
+    },
+    {
+      "name": "rbac.log",
+      "size_bytes": 12207,
+      "line_count": 6
+    },
+    {
+      "name": "pod_loki-0_default.log",
+      "size_bytes": 10999,
+      "line_count": 92
+    },
+    {
+      "name": "pod_ingress-nginx-controller-7685dbc8fb-scqck_ingress-nginx.log",
+      "size_bytes": 4110,
+      "line_count": 32
+    },
+    {
+      "name": "pod_hi-dep-c186dad7-cc97fc965-zsq99_demo-namespace.log",
+      "size_bytes": 1375,
+      "line_count": 19
+    },
+    {
+      "name": "pod_hi-dep-c186dad7-cc97fc965-d2l9s_demo-namespace.log",
+      "size_bytes": 2836,
+      "line_count": 26
+    },
+    {
+      "name": "pod_prometheus-kube-state-metrics-7f5f75c85d-bsrrl_default.log",
+      "size_bytes": 4072,
+      "line_count": 28
+    },
+    {
+      "name": "pod_my-prometheus-server-794fdf9d97-7hcp4_default.log",
+      "size_bytes": 1219,
+      "line_count": 7
+    },
+    {
+      "name": "pod_notes-app-dep-79654bcf89-8zc84_notes-app.log",
+      "size_bytes": 44,
+      "line_count": 1
+    },
+    {
+      "name": "pod_loki-promtail-c9fzz_default.log",
+      "size_bytes": 859135,
+      "line_count": 3398
+    },
+    {
+      "name": "pod_kube-apiserver-minikube_kube-system.log",
+      "size_bytes": 83009,
+      "line_count": 499
+    },
+    {
+      "name": "pod_my-grafana-7bcc5c97bd-dgsx8_default.log",
+      "size_bytes": 21970,
+      "line_count": 144
+    },
+    {
+      "name": "pod_prometheus-kube-prometheus-operator-d89fb8945-f7n5z_default.log",
+      "size_bytes": 16097,
+      "line_count": 89
+    },
+    {
+      "name": "pod_my-prometheus-prometheus-node-exporter-gkwz4_default.log",
+      "size_bytes": 0,
+      "line_count": 0
+    },
+    {
+      "name": "pod_coredns-674b8bbfcf-mblsb_kube-system.log",
+      "size_bytes": 99943,
+      "line_count": 804
+    },
+    {
+      "name": "pod_my-prometheus-prometheus-pushgateway-7566857868-7mmdc_default.log",
+      "size_bytes": 584,
+      "line_count": 4
+    },
+    {
+      "name": "pod_prometheus-prometheus-node-exporter-qlgh4_default.log",
+      "size_bytes": 5372,
+      "line_count": 55
+    },
+    {
+      "name": "pod_storage-provisioner_kube-system.log",
+      "size_bytes": 714,
+      "line_count": 6
+    },
+    {
+      "name": "pod_prometheus-prometheus-kube-prometheus-prometheus-0_default.log",
+      "size_bytes": 14687,
+      "line_count": 76
+    },
+    {
+      "name": "monitoring.log",
+      "size_bytes": 306,
+      "line_count": 4
+    },
+    {
+      "name": "pod_kube-proxy-stnnw_kube-system.log",
+      "size_bytes": 5152,
+      "line_count": 29
+    },
+    {
+      "name": "pod_metrics-app-57fbea6d-6dcfbf5c49-4m9dh_demo-namespace.log",
+      "size_bytes": 755,
+      "line_count": 9
+    },
+    {
+      "name": "pod_alertmanager-prometheus-kube-prometheus-alertmanager-0_default.log",
+      "size_bytes": 966,
+      "line_count": 6
+    },
+    {
+      "name": "pod_my-prometheus-kube-state-metrics-8554857ddd-m4st5_default.log",
+      "size_bytes": 5001,
+      "line_count": 36
+    },
+    {
+      "name": "pod_app-pod-25437d42_demo-namespace.log",
+      "size_bytes": 1375,
+      "line_count": 19
+    },
+    {
+      "name": "application.log",
+      "size_bytes": 660630,
+      "line_count": 14
+    },
+    {
+      "name": "errors.log",
+      "size_bytes": 313,
+      "line_count": 5
+    },
+    {
+      "name": "pod_ingress-nginx-admission-patch-x9xnf_ingress-nginx.log",
+      "size_bytes": 439,
+      "line_count": 3
+    },
+    {
+      "name": "pod_etcd-minikube_kube-system.log",
+      "size_bytes": 9335666,
+      "line_count": 21512
+    },
+    {
+      "name": "pod_notes-app-dep-79654bcf89-xwmf8_notes-app.log",
+      "size_bytes": 44,
+      "line_count": 1
+    },
+    {
+      "name": "pod_my-prometheus-alertmanager-0_default.log",
+      "size_bytes": 1503,
+      "line_count": 10
+    },
+    {
+      "name": "pod_nginx-dep-7b8f6d7b7d-kww9s_notes-app.log",
+      "size_bytes": 1375,
+      "line_count": 19
+    },
+    {
+      "name": "pod_nginx-dep-7b8f6d7b7d-74tpr_notes-app.log",
+      "size_bytes": 1375,
+      "line_count": 19
+    },
+    {
+      "name": "kubernetes.log",
+      "size_bytes": 7520,
+      "line_count": 66
+    },
+    {
+      "name": "pod_ingress-nginx-admission-create-vp75m_ingress-nginx.log",
+      "size_bytes": 405,
+      "line_count": 3
+    },
+    {
+      "name": "pod_kube-controller-manager-minikube_kube-system.log",
+      "size_bytes": 112714,
+      "line_count": 378
+    }
+  ],
+  "total_entries": 27467,
+  "collection_duration_seconds": 35.051004,
+  "collection_timestamp": "2025-07-31T16:12:07.099544"
+}

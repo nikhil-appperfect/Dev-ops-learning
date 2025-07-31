@@ -1,0 +1,69 @@
+level=info ts=2025-07-31T10:38:00.759907476Z caller=main.go:103 msg="Starting Loki" version="(version=2.6.1, branch=HEAD, revision=6bd05c9a4)"
+level=info ts=2025-07-31T10:38:01.22823623Z caller=server.go:288 http=[::]:3100 grpc=[::]:9095 msg="server listening on addresses"
+level=info ts=2025-07-31T10:38:02.01472636Z caller=modules.go:736 msg="RulerStorage is not configured in single binary mode and will not be started."
+level=warn ts=2025-07-31T10:38:02.188110128Z caller=experimental.go:20 msg="experimental feature in use" feature="In-memory (FIFO) cache - chunksfifocache"
+level=info ts=2025-07-31T10:38:02.776819499Z caller=table_manager.go:134 msg="uploading tables"
+level=info ts=2025-07-31T10:38:03.352931543Z caller=table_manager.go:381 msg="loading local table index_20299"
+ts=2025-07-31T10:38:03.397763297Z caller=spanlogger.go:80 level=info msg="building index list cache"
+ts=2025-07-31T10:38:04.567210098Z caller=spanlogger.go:80 level=info msg="index list cache built" duration=437.904441ms
+level=info ts=2025-07-31T10:38:05.087455957Z caller=table_manager.go:252 msg="query readiness setup completed" duration=3.405µs distinct_users_len=0
+level=info ts=2025-07-31T10:38:05.087497377Z caller=shipper.go:124 msg="starting index shipper in RW mode"
+level=info ts=2025-07-31T10:38:05.100500486Z caller=table_manager.go:226 msg="loading table index_20300"
+level=info ts=2025-07-31T10:38:05.462582346Z caller=memberlist_client.go:534 msg="joined memberlist cluster" reached_nodes=1
+level=info ts=2025-07-31T10:38:05.617497375Z caller=table.go:319 msg="handing over indexes to shipper index_20300"
+level=info ts=2025-07-31T10:38:05.619882685Z caller=table.go:335 msg="finished handing over table index_20300"
+level=info ts=2025-07-31T10:38:05.631040156Z caller=shipper_index_client.go:79 msg="starting boltdb shipper in RW mode"
+level=info ts=2025-07-31T10:38:05.629747633Z caller=table_manager.go:167 msg="handing over indexes to shipper"
+level=info ts=2025-07-31T10:38:05.96163695Z caller=table.go:319 msg="handing over indexes to shipper index_20300"
+level=info ts=2025-07-31T10:38:05.961714266Z caller=table.go:335 msg="finished handing over table index_20300"
+level=info ts=2025-07-31T10:38:06.052674157Z caller=worker.go:112 msg="Starting querier worker using query-scheduler and scheduler ring for addresses"
+level=info ts=2025-07-31T10:38:06.211996547Z caller=modules.go:761 msg="RulerStorage is nil.  Not starting the ruler."
+level=info ts=2025-07-31T10:38:12.631625389Z caller=module_service.go:82 msg=initialising module=server
+level=info ts=2025-07-31T10:38:13.23499657Z caller=module_service.go:82 msg=initialising module=memberlist-kv
+level=info ts=2025-07-31T10:38:13.233308541Z caller=module_service.go:82 msg=initialising module=query-frontend-tripperware
+level=info ts=2025-07-31T10:38:13.317162234Z caller=module_service.go:82 msg=initialising module=ring
+level=info ts=2025-07-31T10:38:13.319867598Z caller=module_service.go:82 msg=initialising module=store
+level=info ts=2025-07-31T10:38:13.911155862Z caller=ring.go:263 msg="ring doesn't exist in KV store yet"
+level=info ts=2025-07-31T10:38:14.059121151Z caller=module_service.go:82 msg=initialising module=ingester-querier
+level=info ts=2025-07-31T10:38:14.059600016Z caller=module_service.go:82 msg=initialising module=usage-report
+level=info ts=2025-07-31T10:38:14.062543325Z caller=module_service.go:82 msg=initialising module=compactor
+level=info ts=2025-07-31T10:38:14.063857558Z caller=ring.go:263 msg="ring doesn't exist in KV store yet"
+level=info ts=2025-07-31T10:38:14.064051914Z caller=module_service.go:82 msg=initialising module=query-scheduler
+level=info ts=2025-07-31T10:38:14.115882855Z caller=module_service.go:82 msg=initialising module=distributor
+level=info ts=2025-07-31T10:38:14.505844901Z caller=ring.go:263 msg="ring doesn't exist in KV store yet"
+level=info ts=2025-07-31T10:38:14.506464645Z caller=basic_lifecycler.go:261 msg="instance not found in the ring" instance=loki-0 ring=scheduler
+level=info ts=2025-07-31T10:38:14.506549381Z caller=basic_lifecycler_delegates.go:63 msg="not loading tokens from file, tokens file path is empty"
+level=info ts=2025-07-31T10:38:14.506879225Z caller=ring.go:263 msg="ring doesn't exist in KV store yet"
+level=info ts=2025-07-31T10:38:14.506930101Z caller=module_service.go:82 msg=initialising module=ingester
+level=info ts=2025-07-31T10:38:14.50518501Z caller=basic_lifecycler.go:261 msg="instance not found in the ring" instance=loki-0 ring=compactor
+level=info ts=2025-07-31T10:38:14.507554573Z caller=basic_lifecycler_delegates.go:63 msg="not loading tokens from file, tokens file path is empty"
+level=info ts=2025-07-31T10:38:14.510795492Z caller=ingester.go:401 msg="recovering from checkpoint"
+level=info ts=2025-07-31T10:38:14.512887492Z caller=lifecycler.go:547 msg="not loading tokens from file, tokens file path is empty"
+level=info ts=2025-07-31T10:38:14.517063179Z caller=compactor.go:307 msg="waiting until compactor is JOINING in the ring"
+level=info ts=2025-07-31T10:38:14.518142719Z caller=compactor.go:311 msg="compactor is JOINING in the ring"
+level=info ts=2025-07-31T10:38:14.518215663Z caller=scheduler.go:617 msg="waiting until scheduler is JOINING in the ring"
+level=info ts=2025-07-31T10:38:14.518246679Z caller=scheduler.go:621 msg="scheduler is JOINING in the ring"
+level=info ts=2025-07-31T10:38:14.518965827Z caller=lifecycler.go:576 msg="instance not found in ring, adding with no tokens" ring=distributor
+level=info ts=2025-07-31T10:38:14.519205343Z caller=lifecycler.go:416 msg="auto-joining cluster after timeout" ring=distributor
+level=info ts=2025-07-31T10:38:15.210200553Z caller=ingester.go:417 msg="recovered WAL checkpoint recovery finished" elapsed=701.154755ms errors=false
+level=info ts=2025-07-31T10:38:15.2102809Z caller=ingester.go:423 msg="recovering from WAL"
+level=info ts=2025-07-31T10:38:15.532011692Z caller=compactor.go:321 msg="waiting until compactor is ACTIVE in the ring"
+level=info ts=2025-07-31T10:38:15.532785987Z caller=compactor.go:325 msg="compactor is ACTIVE in the ring"
+level=info ts=2025-07-31T10:38:15.532672245Z caller=scheduler.go:631 msg="waiting until scheduler is ACTIVE in the ring"
+level=info ts=2025-07-31T10:38:15.532832029Z caller=scheduler.go:635 msg="scheduler is ACTIVE in the ring"
+level=info ts=2025-07-31T10:38:15.532858972Z caller=module_service.go:82 msg=initialising module=querier
+level=info ts=2025-07-31T10:38:15.543136888Z caller=module_service.go:82 msg=initialising module=query-frontend
+level=info ts=2025-07-31T10:38:18.924603038Z caller=worker.go:209 msg="adding connection" addr=10.244.0.152:9095
+level=info ts=2025-07-31T10:38:20.29054439Z caller=scheduler.go:682 msg="this scheduler is in the ReplicationSet, will now accept requests."
+level=info ts=2025-07-31T10:38:20.894366371Z caller=compactor.go:386 msg="this instance has been chosen to run the compactor, starting compactor"
+level=info ts=2025-07-31T10:38:21.880229336Z caller=compactor.go:413 msg="waiting 10m0s for ring to stay stable and previous compactions to finish before starting compactor"
+level=info ts=2025-07-31T10:38:25.66061855Z caller=frontend_scheduler_worker.go:101 msg="adding connection to scheduler" addr=10.244.0.152:9095
+level=info ts=2025-07-31T10:38:26.864104817Z caller=ingester.go:439 msg="WAL segment recovery finished" elapsed=12.355055006s errors=false
+level=info ts=2025-07-31T10:38:26.877608115Z caller=ingester.go:387 msg="closing recoverer"
+level=info ts=2025-07-31T10:38:27.806568345Z caller=ingester.go:395 msg="WAL recovery finished" time=13.297516201s
+level=info ts=2025-07-31T10:38:27.824519983Z caller=wal.go:156 msg=started component=wal
+level=info ts=2025-07-31T10:38:27.840229625Z caller=loki.go:374 msg="Loki started"
+level=info ts=2025-07-31T10:38:27.832193523Z caller=lifecycler.go:547 msg="not loading tokens from file, tokens file path is empty"
+level=info ts=2025-07-31T10:38:28.126778142Z caller=lifecycler.go:576 msg="instance not found in ring, adding with no tokens" ring=ingester
+level=info ts=2025-07-31T10:38:28.12697467Z caller=lifecycler.go:416 msg="auto-joining cluster after timeout" ring=ingester
+level=error ts=2025-07-31T10:38:47.325704594Z caller=tcp_transport.go:318 component="memberlist TCPTransport" msg="unknown message type" msgType=G remote=10.244.0.172:47438

@@ -1,0 +1,59 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: nginx-metrics-monitor
+  namespace: demo-namespace
+  labels:
+    release: prometheus
+    app: metrics-app
+spec:
+  selector:
+    matchLabels:
+      app: metrics-app
+  endpoints:
+    - port: metrics
+      path: /metrics
+      interval: 30s
+      scrapeTimeout: 10s
+  namespaceSelector:
+    matchNames:
+      - demo-namespace
+---
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: nginx-alert-rules
+  namespace: demo-namespace
+  labels:
+    release: prometheus
+    app: metrics-app
+spec:
+  groups:
+    - name: nginx.rules
+      rules:
+        - alert: NginxDown
+          expr: nginx_up == 0
+          for: 1m
+          labels:
+            severity: critical
+          annotations:
+            summary: Nginx is down
+            description: Nginx metrics endpoint is not responding
+        
+        - alert: HighNginxErrorRate
+          expr: rate(nginx_http_requests_total{status=~"4..|5.."}[5m]) > 0.1
+          for: 2m
+          labels:
+            severity: warning
+          annotations:
+            summary: High nginx error rate
+            description: Nginx is returning high rate of 4xx/5xx errors
+        
+        - alert: HighNginxConnectionCount
+          expr: nginx_connections_active > 100
+          for: 1m
+          labels:
+            severity: warning
+          annotations:
+            summary: High nginx connection count
+            description: Nginx has more than 100 active connections 

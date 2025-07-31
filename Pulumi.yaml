@@ -1,0 +1,11 @@
+name: final-revision
+description: this project include whole my training concepts
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: kubernetes-python

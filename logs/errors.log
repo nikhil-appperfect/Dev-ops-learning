@@ -1,0 +1,5 @@
+2025-07-31 16:08:45,918 - errors - ERROR - Error in test_function: This is a test error
+Traceback (most recent call last):
+  File "/Users/appperfect/Desktop/nikhil/final-project/test_logging.py", line 36, in test_logging_functionality
+    raise ValueError("This is a test error")
+ValueError: This is a test error

@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+NGINX Ingress controller
+  Release:       v1.10.0
+  Build:         71f78d49f0a496c31d4c19f095469f3f23900f8a
+  Repository:    https://github.com/kubernetes/ingress-nginx
+  nginx version: nginx/1.25.3
+
+-------------------------------------------------------------------------------
+
+W0731 09:52:01.660106       6 client_config.go:618] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0731 09:52:01.660792       6 main.go:205] "Creating API client" host="https://10.96.0.1:443"
+I0731 09:52:01.946928       6 main.go:249] "Running in Kubernetes cluster" major="1" minor="33" git="v1.33.1" state="clean" commit="8adc0f041b8e7ad1d30e29cc59c6ae7a15e19828" platform="linux/amd64"
+I0731 09:52:05.195614       6 main.go:101] "SSL fake certificate created" file="/etc/ingress-controller/ssl/default-fake-certificate.pem"
+I0731 09:52:05.997072       6 ssl.go:536] "loading tls certificate" path="/usr/local/certificates/cert" key="/usr/local/certificates/key"
+I0731 09:52:06.444993       6 nginx.go:265] "Starting NGINX Ingress controller"
+I0731 09:52:07.377433       6 trace.go:236] Trace[2024674517]: "DeltaFIFO Pop Process" ID:default/my-prometheus-kube-state-metrics,Depth:22,Reason:slow event handlers blocking the queue (31-Jul-2025 09:52:07.159) (total time: 217ms):
+Trace[2024674517]: [217.434391ms] [217.434391ms] END
+I0731 09:52:07.453446       6 event.go:364] Event(v1.ObjectReference{Kind:"ConfigMap", Namespace:"ingress-nginx", Name:"ingress-nginx-controller", UID:"d0ba6e5b-efea-49c7-9ca3-e23e28388c47", APIVersion:"v1", ResourceVersion:"46032", FieldPath:""}): type: 'Normal' reason: 'CREATE' ConfigMap ingress-nginx/ingress-nginx-controller
+I0731 09:52:08.646674       6 store.go:440] "Found valid IngressClass" ingress="notes-app/notes-app-route" ingressclass="nginx"
+I0731 09:52:08.649677       6 event.go:364] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"notes-app", Name:"notes-app-route", UID:"5bf24868-38aa-464b-9d08-5ef53bd35fa6", APIVersion:"networking.k8s.io/v1", ResourceVersion:"72391", FieldPath:""}): type: 'Normal' reason: 'Sync' Scheduled for sync
+I0731 09:52:08.719017       6 nginx.go:308] "Starting NGINX process"
+I0731 09:52:08.862406       6 leaderelection.go:250] attempting to acquire leader lease ingress-nginx/ingress-nginx-leader...
+I0731 09:52:09.115797       6 nginx.go:328] "Starting validation webhook" address=":8443" certPath="/usr/local/certificates/cert" keyPath="/usr/local/certificates/key"
+I0731 09:52:09.189442       6 controller.go:190] "Configuration changes detected, backend reload required"
+I0731 09:52:11.970261       6 leaderelection.go:260] successfully acquired lease ingress-nginx/ingress-nginx-leader
+I0731 09:52:11.996055       6 status.go:84] "New leader elected" identity="ingress-nginx-controller-7685dbc8fb-scqck"
+I0731 09:52:12.813856       6 status.go:304] "updating Ingress status" namespace="notes-app" ingress="notes-app-route" currentValue=null newValue=[{"ip":"127.0.0.1"}]
+I0731 09:52:12.950053       6 event.go:364] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"notes-app", Name:"notes-app-route", UID:"5bf24868-38aa-464b-9d08-5ef53bd35fa6", APIVersion:"networking.k8s.io/v1", ResourceVersion:"72508", FieldPath:""}): type: 'Normal' reason: 'Sync' Scheduled for sync
+I0731 09:52:13.127554       6 controller.go:210] "Backend successfully reloaded"
+I0731 09:52:13.127620       6 controller.go:221] "Initial sync, sleeping for 1 second"
+I0731 09:52:13.128086       6 event.go:364] Event(v1.ObjectReference{Kind:"Pod", Namespace:"ingress-nginx", Name:"ingress-nginx-controller-7685dbc8fb-scqck", UID:"93397bf3-ef37-41d1-878c-99b1dd343c27", APIVersion:"v1", ResourceVersion:"72492", FieldPath:""}): type: 'Normal' reason: 'RELOAD' NGINX reload triggered due to a change in configuration
+W0731 09:52:14.159815       6 controller.go:241] Dynamic reconfiguration failed (retrying; 15 retries left): Post "http://127.0.0.1:10246/configuration/backends": dial tcp 127.0.0.1:10246: connect: connection refused

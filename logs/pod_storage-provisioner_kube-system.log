@@ -1,0 +1,6 @@
+I0731 10:41:52.422051       1 storage_provisioner.go:116] Initializing the minikube storage provisioner...
+I0731 10:41:52.635876       1 storage_provisioner.go:141] Storage provisioner initialized, now starting service!
+I0731 10:41:52.639206       1 leaderelection.go:243] attempting to acquire leader lease kube-system/k8s.io-minikube-hostpath...
+W0731 10:41:52.665380       1 warnings.go:70] v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice
+W0731 10:41:56.291833       1 warnings.go:70] v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice
+W0731 10:42:00.802084       1 warnings.go:70] v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice

@@ -1,0 +1,498 @@
+I0731 08:32:23.135513       1 options.go:249] external host was not specified, using 192.168.49.2
+I0731 08:32:23.141235       1 server.go:147] Version: v1.33.1
+I0731 08:32:23.141274       1 server.go:149] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0731 08:32:24.778292       1 shared_informer.go:350] "Waiting for caches to sync" controller="node_authorizer"
+I0731 08:32:24.849299       1 shared_informer.go:350] "Waiting for caches to sync" controller="*generic.policySource[*k8s.io/api/admissionregistration/v1.ValidatingAdmissionPolicy,*k8s.io/api/admissionregistration/v1.ValidatingAdmissionPolicyBinding,k8s.io/apiserver/pkg/admission/plugin/policy/validating.Validator]"
+I0731 08:32:24.866562       1 plugins.go:157] Loaded 14 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,PodTopologyLabels,MutatingAdmissionPolicy,MutatingAdmissionWebhook.
+I0731 08:32:24.866629       1 plugins.go:160] Loaded 13 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,ClusterTrustBundleAttest,CertificateSubjectRestriction,ValidatingAdmissionPolicy,ValidatingAdmissionWebhook,ResourceQuota.
+I0731 08:32:24.866922       1 instance.go:233] Using reconciler: lease
+I0731 08:32:25.237058       1 handler.go:288] Adding GroupVersion apiextensions.k8s.io v1 to ResourceManager
+W0731 08:32:25.237174       1 genericapiserver.go:778] Skipping API apiextensions.k8s.io/v1beta1 because it has no resources.
+I0731 08:32:25.512169       1 cidrallocator.go:197] starting ServiceCIDR Allocator Controller
+I0731 08:32:27.007030       1 handler.go:288] Adding GroupVersion  v1 to ResourceManager
+I0731 08:32:27.012652       1 apis.go:112] API group "internal.apiserver.k8s.io" is not enabled, skipping.
+I0731 08:32:28.367833       1 apis.go:112] API group "storagemigration.k8s.io" is not enabled, skipping.
+I0731 08:32:28.978703       1 apis.go:112] API group "resource.k8s.io" is not enabled, skipping.
+I0731 08:32:29.086446       1 handler.go:288] Adding GroupVersion authentication.k8s.io v1 to ResourceManager
+W0731 08:32:29.086474       1 genericapiserver.go:778] Skipping API authentication.k8s.io/v1beta1 because it has no resources.
+W0731 08:32:29.086480       1 genericapiserver.go:778] Skipping API authentication.k8s.io/v1alpha1 because it has no resources.
+I0731 08:32:29.087032       1 handler.go:288] Adding GroupVersion authorization.k8s.io v1 to ResourceManager
+W0731 08:32:29.087048       1 genericapiserver.go:778] Skipping API authorization.k8s.io/v1beta1 because it has no resources.
+I0731 08:32:29.091020       1 handler.go:288] Adding GroupVersion autoscaling v2 to ResourceManager
+I0731 08:32:29.093921       1 handler.go:288] Adding GroupVersion autoscaling v1 to ResourceManager
+W0731 08:32:29.093943       1 genericapiserver.go:778] Skipping API autoscaling/v2beta1 because it has no resources.
+W0731 08:32:29.093950       1 genericapiserver.go:778] Skipping API autoscaling/v2beta2 because it has no resources.
+I0731 08:32:29.105865       1 handler.go:288] Adding GroupVersion batch v1 to ResourceManager
+W0731 08:32:29.105883       1 genericapiserver.go:778] Skipping API batch/v1beta1 because it has no resources.
+I0731 08:32:29.109879       1 handler.go:288] Adding GroupVersion certificates.k8s.io v1 to ResourceManager
+W0731 08:32:29.109897       1 genericapiserver.go:778] Skipping API certificates.k8s.io/v1beta1 because it has no resources.
+W0731 08:32:29.109903       1 genericapiserver.go:778] Skipping API certificates.k8s.io/v1alpha1 because it has no resources.
+I0731 08:32:29.110371       1 handler.go:288] Adding GroupVersion coordination.k8s.io v1 to ResourceManager
+W0731 08:32:29.110383       1 genericapiserver.go:778] Skipping API coordination.k8s.io/v1beta1 because it has no resources.
+W0731 08:32:29.110387       1 genericapiserver.go:778] Skipping API coordination.k8s.io/v1alpha2 because it has no resources.
+I0731 08:32:29.118026       1 handler.go:288] Adding GroupVersion discovery.k8s.io v1 to ResourceManager
+W0731 08:32:29.118048       1 genericapiserver.go:778] Skipping API discovery.k8s.io/v1beta1 because it has no resources.
+I0731 08:32:29.124043       1 handler.go:288] Adding GroupVersion networking.k8s.io v1 to ResourceManager
+W0731 08:32:29.124067       1 genericapiserver.go:778] Skipping API networking.k8s.io/v1beta1 because it has no resources.
+W0731 08:32:29.124073       1 genericapiserver.go:778] Skipping API networking.k8s.io/v1alpha1 because it has no resources.
+I0731 08:32:29.124399       1 handler.go:288] Adding GroupVersion node.k8s.io v1 to ResourceManager
+W0731 08:32:29.124409       1 genericapiserver.go:778] Skipping API node.k8s.io/v1beta1 because it has no resources.
+W0731 08:32:29.124414       1 genericapiserver.go:778] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+I0731 08:32:29.128232       1 handler.go:288] Adding GroupVersion policy v1 to ResourceManager
+W0731 08:32:29.128530       1 genericapiserver.go:778] Skipping API policy/v1beta1 because it has no resources.
+I0731 08:32:29.132272       1 handler.go:288] Adding GroupVersion rbac.authorization.k8s.io v1 to ResourceManager
+W0731 08:32:29.132334       1 genericapiserver.go:778] Skipping API rbac.authorization.k8s.io/v1beta1 because it has no resources.
+W0731 08:32:29.132341       1 genericapiserver.go:778] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+I0731 08:32:29.132686       1 handler.go:288] Adding GroupVersion scheduling.k8s.io v1 to ResourceManager
+W0731 08:32:29.132724       1 genericapiserver.go:778] Skipping API scheduling.k8s.io/v1beta1 because it has no resources.
+W0731 08:32:29.132729       1 genericapiserver.go:778] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+I0731 08:32:29.141220       1 handler.go:288] Adding GroupVersion storage.k8s.io v1 to ResourceManager
+W0731 08:32:29.141250       1 genericapiserver.go:778] Skipping API storage.k8s.io/v1beta1 because it has no resources.
+W0731 08:32:29.141256       1 genericapiserver.go:778] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+I0731 08:32:29.149718       1 handler.go:288] Adding GroupVersion flowcontrol.apiserver.k8s.io v1 to ResourceManager
+W0731 08:32:29.149738       1 genericapiserver.go:778] Skipping API flowcontrol.apiserver.k8s.io/v1beta3 because it has no resources.
+W0731 08:32:29.149744       1 genericapiserver.go:778] Skipping API flowcontrol.apiserver.k8s.io/v1beta2 because it has no resources.
+W0731 08:32:29.149747       1 genericapiserver.go:778] Skipping API flowcontrol.apiserver.k8s.io/v1beta1 because it has no resources.
+I0731 08:32:29.167026       1 handler.go:288] Adding GroupVersion apps v1 to ResourceManager
+W0731 08:32:29.167051       1 genericapiserver.go:778] Skipping API apps/v1beta2 because it has no resources.
+W0731 08:32:29.167057       1 genericapiserver.go:778] Skipping API apps/v1beta1 because it has no resources.
+I0731 08:32:29.174311       1 handler.go:288] Adding GroupVersion admissionregistration.k8s.io v1 to ResourceManager
+W0731 08:32:29.174364       1 genericapiserver.go:778] Skipping API admissionregistration.k8s.io/v1beta1 because it has no resources.
+W0731 08:32:29.174371       1 genericapiserver.go:778] Skipping API admissionregistration.k8s.io/v1alpha1 because it has no resources.
+I0731 08:32:29.175055       1 handler.go:288] Adding GroupVersion events.k8s.io v1 to ResourceManager
+W0731 08:32:29.175075       1 genericapiserver.go:778] Skipping API events.k8s.io/v1beta1 because it has no resources.
+I0731 08:32:29.203457       1 handler.go:288] Adding GroupVersion apiregistration.k8s.io v1 to ResourceManager
+W0731 08:32:29.203520       1 genericapiserver.go:778] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+I0731 08:32:31.017857       1 dynamic_cafile_content.go:161] "Starting controller" name="request-header::/var/lib/minikube/certs/front-proxy-ca.crt"
+I0731 08:32:31.019020       1 dynamic_cafile_content.go:161] "Starting controller" name="client-ca-bundle::/var/lib/minikube/certs/ca.crt"
+I0731 08:32:31.019181       1 dynamic_serving_content.go:135] "Starting controller" name="serving-cert::/var/lib/minikube/certs/apiserver.crt::/var/lib/minikube/certs/apiserver.key"
+I0731 08:32:31.028095       1 tlsconfig.go:243] "Starting DynamicServingCertificateController"
+I0731 08:32:31.046601       1 secure_serving.go:211] Serving securely on [::]:8443
+I0731 08:32:31.050175       1 aggregator.go:169] waiting for initial CRD sync...
+I0731 08:32:31.054277       1 system_namespaces_controller.go:66] Starting system namespaces controller
+I0731 08:32:31.055513       1 customresource_discovery_controller.go:294] Starting DiscoveryController
+I0731 08:32:31.063313       1 controller.go:119] Starting legacy_token_tracking_controller
+I0731 08:32:31.064661       1 shared_informer.go:350] "Waiting for caches to sync" controller="configmaps"
+I0731 08:32:31.063373       1 controller.go:78] Starting OpenAPI AggregationController
+I0731 08:32:31.062711       1 apf_controller.go:377] Starting API Priority and Fairness config controller
+I0731 08:32:31.070615       1 gc_controller.go:78] Starting apiserver lease garbage collector
+I0731 08:32:31.072568       1 crdregistration_controller.go:114] Starting crd-autoregister controller
+I0731 08:32:31.072597       1 shared_informer.go:350] "Waiting for caches to sync" controller="crd-autoregister"
+I0731 08:32:31.072647       1 controller.go:142] Starting OpenAPI controller
+I0731 08:32:31.072665       1 controller.go:90] Starting OpenAPI V3 controller
+I0731 08:32:31.072681       1 naming_controller.go:299] Starting NamingConditionController
+I0731 08:32:31.072700       1 establishing_controller.go:81] Starting EstablishingController
+I0731 08:32:31.072713       1 nonstructuralschema_controller.go:195] Starting NonStructuralSchemaConditionController
+I0731 08:32:31.072722       1 apiapproval_controller.go:189] Starting KubernetesAPIApprovalPolicyConformantConditionController
+I0731 08:32:31.072873       1 local_available_controller.go:156] Starting LocalAvailability controller
+I0731 08:32:31.072919       1 cache.go:32] Waiting for caches to sync for LocalAvailability controller
+I0731 08:32:31.072946       1 remote_available_controller.go:411] Starting RemoteAvailability controller
+I0731 08:32:31.072949       1 cache.go:32] Waiting for caches to sync for RemoteAvailability controller
+I0731 08:32:31.072961       1 apiservice_controller.go:100] Starting APIServiceRegistrationController
+I0731 08:32:31.072964       1 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+I0731 08:32:31.072979       1 controller.go:80] Starting OpenAPI V3 AggregationController
+I0731 08:32:31.074769       1 crd_finalizer.go:269] Starting CRDFinalizer
+I0731 08:32:31.076251       1 repairip.go:200] Starting ipallocator-repair-controller
+I0731 08:32:31.076435       1 shared_informer.go:350] "Waiting for caches to sync" controller="ipallocator-repair-controller"
+I0731 08:32:31.090899       1 dynamic_serving_content.go:135] "Starting controller" name="aggregator-proxy-cert::/var/lib/minikube/certs/front-proxy-client.crt::/var/lib/minikube/certs/front-proxy-client.key"
+I0731 08:32:31.263576       1 default_servicecidr_controller.go:110] Starting kubernetes-service-cidr-controller
+I0731 08:32:31.263662       1 shared_informer.go:350] "Waiting for caches to sync" controller="kubernetes-service-cidr-controller"
+I0731 08:32:31.263795       1 dynamic_cafile_content.go:161] "Starting controller" name="client-ca-bundle::/var/lib/minikube/certs/ca.crt"
+I0731 08:32:31.264582       1 dynamic_cafile_content.go:161] "Starting controller" name="request-header::/var/lib/minikube/certs/front-proxy-ca.crt"
+E0731 08:32:31.566215       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:31.567226       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:31.567545       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:31.567818       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:31.586450       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:31.586746       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:31.586975       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+I0731 08:32:31.566664       1 cluster_authentication_trust_controller.go:459] Starting cluster_authentication_trust_controller controller
+I0731 08:32:31.588806       1 shared_informer.go:350] "Waiting for caches to sync" controller="cluster_authentication_trust_controller"
+E0731 08:32:31.677204       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+I0731 08:32:32.167399       1 shared_informer.go:357] "Caches are synced" controller="kubernetes-service-cidr-controller"
+I0731 08:32:32.167465       1 default_servicecidr_controller.go:136] Shutting down kubernetes-service-cidr-controller
+I0731 08:32:32.173450       1 shared_informer.go:357] "Caches are synced" controller="configmaps"
+I0731 08:32:32.177469       1 apf_controller.go:382] Running API Priority and Fairness config worker
+I0731 08:32:32.177563       1 apf_controller.go:385] Running API Priority and Fairness periodic rebalancing process
+I0731 08:32:32.179168       1 shared_informer.go:357] "Caches are synced" controller="ipallocator-repair-controller"
+I0731 08:32:32.186956       1 shared_informer.go:357] "Caches are synced" controller="node_authorizer"
+I0731 08:32:32.187018       1 shared_informer.go:357] "Caches are synced" controller="*generic.policySource[*k8s.io/api/admissionregistration/v1.ValidatingAdmissionPolicy,*k8s.io/api/admissionregistration/v1.ValidatingAdmissionPolicyBinding,k8s.io/apiserver/pkg/admission/plugin/policy/validating.Validator]"
+I0731 08:32:32.189201       1 policy_source.go:240] refreshing policies
+I0731 08:32:32.190756       1 shared_informer.go:357] "Caches are synced" controller="cluster_authentication_trust_controller"
+I0731 08:32:32.210272       1 controller.go:667] quota admission added evaluator for: leases.coordination.k8s.io
+I0731 08:32:32.210523       1 controller.go:667] quota admission added evaluator for: leases.coordination.k8s.io
+I0731 08:32:32.225909       1 cache.go:39] Caches are synced for LocalAvailability controller
+I0731 08:32:32.227168       1 storage_scheduling.go:111] all system priority classes are created successfully or already exist.
+I0731 08:32:32.228958       1 cache.go:39] Caches are synced for RemoteAvailability controller
+I0731 08:32:32.230422       1 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+I0731 08:32:32.261519       1 cidrallocator.go:301] created ClusterIP allocator for Service CIDR 10.96.0.0/12
+I0731 08:32:32.374438       1 handler_discovery.go:451] Starting ResourceDiscoveryManager
+I0731 08:32:32.540667       1 controller.go:667] quota admission added evaluator for: serviceaccounts
+I0731 08:32:33.073800       1 shared_informer.go:357] "Caches are synced" controller="crd-autoregister"
+I0731 08:32:33.076525       1 aggregator.go:171] initial CRD sync complete...
+I0731 08:32:33.077023       1 autoregister_controller.go:144] Starting autoregister controller
+I0731 08:32:33.079402       1 cache.go:32] Waiting for caches to sync for autoregister controller
+I0731 08:32:33.079428       1 cache.go:39] Caches are synced for autoregister controller
+I0731 08:32:33.168705       1 handler.go:288] Adding GroupVersion monitoring.coreos.com v1 to ResourceManager
+I0731 08:32:33.189624       1 handler.go:288] Adding GroupVersion monitoring.coreos.com v1alpha1 to ResourceManager
+W0731 08:32:37.404391       1 lease.go:265] Resetting endpoints for master service "kubernetes" to [192.168.49.2]
+I0731 08:32:37.439417       1 controller.go:667] quota admission added evaluator for: endpoints
+I0731 08:32:37.613845       1 controller.go:667] quota admission added evaluator for: endpointslices.discovery.k8s.io
+I0731 08:32:38.582972       1 controller.go:667] quota admission added evaluator for: statefulsets.apps
+E0731 08:32:46.647613       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+I0731 08:32:46.720786       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+E0731 08:32:50.856512       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:50.951027       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:50.960358       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:50.961980       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0731 08:32:50.963842       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+I0731 08:32:51.153196       1 controller.go:667] quota admission added evaluator for: replicasets.apps
+E0731 08:32:51.285986       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+I0731 08:32:51.533123       1 controller.go:667] quota admission added evaluator for: daemonsets.apps
+I0731 08:32:51.738121       1 controller.go:667] quota admission added evaluator for: deployments.apps
+I0731 08:33:01.987021       1 controller.go:667] quota admission added evaluator for: ingresses.networking.k8s.io
+I0731 08:33:22.243540       1 controller.go:667] quota admission added evaluator for: alertmanagers.monitoring.coreos.com
+I0731 08:33:22.317036       1 controller.go:667] quota admission added evaluator for: prometheuses.monitoring.coreos.com
+I0731 08:42:32.260224       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+I0731 08:44:37.015215       1 controller.go:667] quota admission added evaluator for: rolebindings.rbac.authorization.k8s.io
+I0731 08:44:37.015996       1 controller.go:667] quota admission added evaluator for: rolebindings.rbac.authorization.k8s.io
+I0731 08:44:45.942023       1 controller.go:667] quota admission added evaluator for: roles.rbac.authorization.k8s.io
+E0731 08:44:47.022179       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 08:44:47.079647       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 08:44:47.081362       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 08:44:47.083270       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 08:44:47.085589       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="162.045431ms" method="GET" path="/api/v1/events" result=null
+E0731 08:44:51.296511       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http2: stream closed" logger="UnhandledError"
+E0731 08:44:51.364587       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/api/v1/events?limit=500&resourceVersion=0" auditID="8dd0ce49-009b-4c20-95a5-53fe08f5bad1"
+E0731 08:44:51.367488       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http2: stream closed\"}: http2: stream closed" logger="UnhandledError"
+E0731 08:44:51.376139       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http2: stream closed" logger="UnhandledError"
+E0731 08:44:51.379381       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="2.66523ms" method="GET" path="/api/v1/events" result=null
+I0731 08:44:53.112633       1 controller.go:667] quota admission added evaluator for: namespaces
+I0731 08:44:56.312706       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+I0731 08:44:56.397442       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+I0731 08:48:34.273399       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+I0731 08:52:32.189767       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+I0731 09:02:32.175747       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+E0731 09:10:26.218068       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:10:26.397159       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:26.407286       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:26.409995       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:26.413540       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="442.529707ms" method="GET" path="/api/v1/events" result=null
+E0731 09:10:27.331521       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:10:27.334291       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:27.337822       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:27.342657       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:27.351456       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="18.703175ms" method="GET" path="/api/v1/namespaces/default/events" result=null
+E0731 09:10:28.824851       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/api/v1/namespaces/demo-namespace/events?limit=500&resourceVersion=0" auditID="54f34af5-f4db-4165-91e4-fe95dd3f2cc0"
+E0731 09:10:28.824898       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="3.509µs" method="GET" path="/api/v1/namespaces/demo-namespace/events" result=null
+I0731 09:10:32.031230       1 alloc.go:328] "allocated clusterIPs" service="demo-namespace/hi-svc-012e898c" clusterIPs={"IPv4":"10.98.141.74"}
+I0731 09:10:32.312368       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:10:32.386279       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:10:32.392478       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:32.446615       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:10:32.476297       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:32.478449       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:32.482515       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:32.487995       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="11.659674ms" method="GET" path="/api/v1/events" result=null
+I0731 09:10:32.491451       1 alloc.go:328] "allocated clusterIPs" service="demo-namespace/metrics-svc-25ce2371" clusterIPs={"IPv4":"10.96.73.218"}
+E0731 09:10:32.502955       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+I0731 09:10:32.393234       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+E0731 09:10:32.509398       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:32.518219       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="131.617394ms" method="GET" path="/api/v1/namespaces/default/events" result=null
+I0731 09:10:33.530527       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+E0731 09:10:34.762766       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:10:34.809577       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:34.851912       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:34.899553       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:34.944801       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="137.175653ms" method="GET" path="/api/v1/namespaces/demo-namespace/events" result=null
+I0731 09:10:34.957875       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+I0731 09:10:36.382766       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+I0731 09:10:36.602397       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+E0731 09:10:37.892682       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:10:37.894424       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:37.897344       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:37.899760       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:37.901119       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="8.280389ms" method="GET" path="/api/v1/events" result=null
+E0731 09:10:40.131315       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:10:40.160313       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:40.193525       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:40.196889       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:40.199691       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="62.433339ms" method="GET" path="/api/v1/namespaces/demo-namespace/events" result=null
+E0731 09:10:41.025166       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:10:41.027775       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:41.031395       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:41.033076       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:41.035002       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="7.362142ms" method="GET" path="/api/v1/namespaces/demo-namespace/events" result=null
+E0731 09:10:44.834160       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: http2.StreamError{StreamID:0xa05, Code:0x8, Cause:error(nil)}: stream error: stream ID 2565; CANCEL" logger="UnhandledError"
+E0731 09:10:44.839970       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:44.842988       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:44.848441       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:10:44.852303       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="3.148µs" method="PUT" path="/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath" result=null
+I0731 09:12:09.507278       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+I0731 09:12:32.429356       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+E0731 09:12:35.496254       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:12:35.496507       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:12:35.500034       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+W0731 09:12:35.989492       1 controller.go:139] slow openapi aggregation of "alertmanagerconfigs.monitoring.coreos.com": 2.668796257s
+E0731 09:12:36.677997       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:12:39.628487       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:12:39.631414       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 64.38µs, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:12:39.631477       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:12:39.631759       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:12:39.631782       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 6.407µs, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:12:39.644035       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:12:39.644067       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:12:39.652303       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:12:39.865831       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="238.398362ms" method="POST" path="/api/v1/persistentvolumes" result=null
+E0731 09:12:39.866244       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="234.458719ms" method="POST" path="/api/v1/namespaces/demo-namespace/events" result=null
+E0731 09:12:39.949945       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:12:40.022555       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 09:12:46.491196       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:12:47.195665       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:12:47.261113       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 09:12:49.586891       1 controller.go:195] "Failed to update lease" err="Operation cannot be fulfilled on leases.coordination.k8s.io \"apiserver-eqt674mfxb4j56mrjjkoe7b7ii\": the object has been modified; please apply your changes to the latest version and try again"
+I0731 09:17:35.485035       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+W0731 09:17:36.508863       1 controller.go:139] slow openapi aggregation of "scrapeconfigs.monitoring.coreos.com": 2.831986925s
+E0731 09:17:36.533151       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+W0731 09:17:37.888218       1 controller.go:139] slow openapi aggregation of "alertmanagers.monitoring.coreos.com": 1.252356928s
+I0731 09:18:29.789873       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:20:20.523930       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/api/v1/nodes/minikube/proxy/metrics/cadvisor" auditID="ada7d671-f266-4248-9eb4-5832b8e5d500"
+I0731 09:21:15.877654       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:21:22.704403       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="6.501µs" method="PUT" path="/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath" result=null
+E0731 09:21:22.711349       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="PUT" URI="/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath" auditID="29999aae-3aff-40b6-951e-0b2a75b483c8"
+E0731 09:21:22.777488       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 119.505724ms, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+I0731 09:22:32.389183       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+W0731 09:22:38.375770       1 controller.go:139] slow openapi aggregation of "probes.monitoring.coreos.com": 4.397490512s
+E0731 09:22:38.720889       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+W0731 09:22:39.987652       1 controller.go:139] slow openapi aggregation of "scrapeconfigs.monitoring.coreos.com": 1.5615802s
+E0731 09:22:47.042484       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:22:47.042552       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:22:47.426742       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 09:22:48.561460       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:22:48.609190       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:22:48.618041       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:22:48.630600       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:22:48.635011       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="58.984215ms" method="GET" path="/apis/coordination.k8s.io/v1/namespaces/ingress-nginx/leases/ingress-nginx-leader" result=null
+E0731 09:22:49.891730       1 controller.go:195] "Failed to update lease" err="Operation cannot be fulfilled on leases.coordination.k8s.io \"apiserver-eqt674mfxb4j56mrjjkoe7b7ii\": the object has been modified; please apply your changes to the latest version and try again"
+E0731 09:30:47.466573       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:30:47.475330       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:30:47.478429       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:30:47.486081       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="1.449276999s" method="PUT" path="/apis/coordination.k8s.io/v1/namespaces/ingress-nginx/leases/ingress-nginx-leader" result=null
+E0731 09:30:47.796472       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 9.725µs, panicked: false, err: <nil>, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:30:48.096227       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="2.4895398s" method="GET" path="/readyz" result=null
+I0731 09:30:48.378182       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:30:48.937696       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="1.824704099s" method="GET" path="/metrics" result=null
+E0731 09:30:49.907073       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="478.95475ms" method="GET" path="/metrics" result=null
+I0731 09:32:32.347459       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+W0731 09:32:36.560883       1 controller.go:139] slow openapi aggregation of "alertmanagerconfigs.monitoring.coreos.com": 1.711829232s
+W0731 09:32:37.774215       1 controller.go:139] slow openapi aggregation of "probes.monitoring.coreos.com": 1.086352812s
+E0731 09:32:39.131865       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:32:43.649519       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:32:44.048784       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:32:44.053582       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:32:44.061516       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:32:44.066877       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="192.876265ms" method="PUT" path="/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/minikube" result=null
+E0731 09:32:46.075317       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:32:46.570457       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 09:32:50.873116       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:32:54.050171       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:32:54.928918       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:32:55.147316       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="5.744392731s" method="GET" path="/apis/coordination.k8s.io/v1/namespaces/ingress-nginx/leases/ingress-nginx-leader" result=null
+E0731 09:32:56.397884       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:32:56.405255       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:32:56.407201       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:32:56.409932       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="117.929808ms" method="PUT" path="/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/minikube" result=null
+E0731 09:32:56.768784       1 controller.go:195] "Failed to update lease" err="Operation cannot be fulfilled on leases.coordination.k8s.io \"apiserver-eqt674mfxb4j56mrjjkoe7b7ii\": the object has been modified; please apply your changes to the latest version and try again"
+E0731 09:33:15.640164       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:33:15.881192       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:33:15.888354       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:33:15.892331       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="1.639923381s" method="PUT" path="/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/minikube" result=null
+E0731 09:33:15.918164       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 654.691365ms, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:33:23.017071       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="9.628142282s" method="GET" path="/metrics" result=null
+E0731 09:34:43.239838       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:34:43.260882       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:34:43.302265       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:34:43.305998       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 915.101263ms, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:34:43.418594       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="749.531138ms" method="PUT" path="/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath" result=null
+I0731 09:34:44.951477       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:34:46.340389       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="2.919615015s" method="GET" path="/metrics" result=null
+E0731 09:35:18.330149       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="1.492564078s" method="GET" path="/metrics" result=null
+E0731 09:39:14.991470       1 writers.go:117] "Unhandled Error" err="apiserver was unable to close cleanly the response writer: http2: stream closed" logger="UnhandledError"
+E0731 09:39:14.993825       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/api/v1/namespaces/demo-namespace/events?limit=500&resourceVersion=0" auditID="026ebf8a-4992-4d17-9104-695c3b1034de"
+E0731 09:39:14.994529       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="3.462µs" method="GET" path="/api/v1/namespaces/demo-namespace/events" result=null
+E0731 09:39:57.280221       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/apis/monitoring.coreos.com/v1/prometheusrules?limit=500&resourceVersion=0" auditID="095ac065-c42e-47b4-acc7-7e5a3790e8e4"
+E0731 09:39:57.280164       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:39:57.284248       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:39:57.287938       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:39:57.292179       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="17.469388ms" method="GET" path="/apis/monitoring.coreos.com/v1/prometheusrules" result=null
+I0731 09:40:10.445605       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:40:12.452738       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/metrics" auditID="572c3244-0704-4f71-b747-f176a8e6bf92"
+E0731 09:40:12.870589       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="419.715566ms" method="GET" path="/metrics" result=null
+E0731 09:40:38.060652       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/metrics" auditID="b07de2a5-468a-42f8-ae5e-6a1ee2d942ca"
+E0731 09:40:39.177839       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="156.004847ms" method="GET" path="/metrics" result=null
+I0731 09:42:32.779952       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+W0731 09:42:35.754891       1 controller.go:139] slow openapi aggregation of "prometheuses.monitoring.coreos.com": 1.592846807s
+W0731 09:42:37.806305       1 controller.go:139] slow openapi aggregation of "scrapeconfigs.monitoring.coreos.com": 1.09198548s
+E0731 09:42:41.920238       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:42:41.920526       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 139.69275ms, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:42:41.931347       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:42:41.936069       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:42:41.938361       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="777.210117ms" method="PUT" path="/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath" result=null
+E0731 09:42:42.093117       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:42:42.127664       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:42:42.381952       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 09:42:42.444045       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:42:49.396574       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:42:49.448239       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:42:49.481265       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:42:49.487143       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:42:49.540082       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="176.608749ms" method="GET" path="/apis/coordination.k8s.io/v1/namespaces/ingress-nginx/leases/ingress-nginx-leader" result=null
+E0731 09:42:51.031823       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:42:51.136860       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 09:42:52.055215       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:42:53.636192       1 controller.go:195] "Failed to update lease" err="Operation cannot be fulfilled on leases.coordination.k8s.io \"apiserver-eqt674mfxb4j56mrjjkoe7b7ii\": the object has been modified; please apply your changes to the latest version and try again"
+E0731 09:44:04.473213       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:44:04.484490       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:44:04.514726       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:44:04.607766       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 496.917169ms, panicked: false, err: <nil>, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:44:04.649463       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="490.275992ms" method="POST" path="/apis/authorization.k8s.io/v1/selfsubjectaccessreviews" result=null
+E0731 09:47:49.902773       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:47:49.999274       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:47:50.028325       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:47:50.031801       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:47:50.033398       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:47:50.042357       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:47:50.109648       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 09:47:50.057256       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="19.23559ms" method="GET" path="/apis/coordination.k8s.io/v1/namespaces/ingress-nginx/leases/ingress-nginx-leader" result=null
+E0731 09:47:51.248294       1 controller.go:195] "Failed to update lease" err="Operation cannot be fulfilled on leases.coordination.k8s.io \"apiserver-eqt674mfxb4j56mrjjkoe7b7ii\": the object has been modified; please apply your changes to the latest version and try again"
+I0731 09:48:35.672767       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:48:36.986935       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/metrics" auditID="56489186-c868-4a15-9381-cc95a5ee552b"
+E0731 09:48:37.917754       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="1.022772199s" method="GET" path="/metrics" result=null
+E0731 09:49:11.880310       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 09:49:11.931854       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:11.933277       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:11.943465       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:11.951926       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="796.002758ms" method="GET" path="/api/v1/namespaces/demo-namespace/events" result=null
+E0731 09:49:35.972537       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:35.985813       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:35.987644       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:35.999773       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="49.016928ms" method="PUT" path="/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath" result=null
+E0731 09:49:36.300618       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 349.403222ms, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:49:53.802405       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:53.936211       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:54.026045       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:54.035050       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="74.397195ms" method="PUT" path="/apis/coordination.k8s.io/v1/namespaces/ingress-nginx/leases/ingress-nginx-leader" result=null
+E0731 09:49:54.082699       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 5.981µs, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:49:54.119844       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:54.216964       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 74.187892ms, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+E0731 09:49:54.361190       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:54.400139       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:49:54.427557       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="356.036368ms" method="PUT" path="/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/minikube" result=null
+I0731 09:49:54.884539       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:49:57.352802       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="447.161485ms" method="GET" path="/metrics" result=null
+E0731 09:49:57.562867       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/metrics" auditID="ec181f18-76a7-4c41-ac78-333bb65ddacc"
+I0731 09:50:36.239369       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:50:36.687802       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="769.076303ms" method="GET" path="/metrics" result=null
+I0731 09:51:19.944962       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:51:20.141289       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="13.380887559s" method="GET" path="/metrics" result=null
+I0731 09:51:24.192479       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 09:51:24.870070       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="621.556299ms" method="GET" path="/metrics" result=null
+E0731 09:52:29.454558       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:52:29.458686       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 09:52:29.463890       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 09:52:29.468771       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="62.241632ms" method="GET" path="/api/v1/namespaces/demo-namespace/events" result=null
+I0731 09:52:32.337899       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+E0731 09:52:41.148379       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:52:41.174309       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 09:52:41.320826       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 09:52:42.853705       1 controller.go:195] "Failed to update lease" err="Operation cannot be fulfilled on leases.coordination.k8s.io \"apiserver-eqt674mfxb4j56mrjjkoe7b7ii\": the object has been modified; please apply your changes to the latest version and try again"
+E0731 09:53:23.436254       1 upgradeaware.go:427] Error proxying data from client to backend: websocket: close 1006 (abnormal closure): unexpected EOF
+E0731 10:00:19.655366       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: http2.StreamError{StreamID:0x219, Code:0x8, Cause:error(nil)}: stream error: stream ID 537; CANCEL" logger="UnhandledError"
+E0731 10:00:19.660733       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:00:19.669744       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 10:00:19.672318       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:00:19.675932       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="66.111504ms" method="PUT" path="/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath" result=null
+E0731 10:01:17.102026       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="2.963772262s" method="GET" path="/metrics" result=null
+I0731 10:01:42.233501       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 10:01:49.446813       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/metrics" auditID="5efa1ac4-dc03-4452-ab3f-c59d00b999c8"
+E0731 10:01:49.867955       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="450.305242ms" method="GET" path="/metrics" result=null
+I0731 10:01:51.783853       1 controller.go:667] quota admission added evaluator for: servicemonitors.monitoring.coreos.com
+W0731 10:01:52.725667       1 dispatcher.go:210] Failed calling webhook, failing open prometheusrulemutate.monitoring.coreos.com: failed calling webhook "prometheusrulemutate.monitoring.coreos.com": failed to call webhook: Post "https://prometheus-kube-prometheus-operator.default.svc:443/admission-prometheusrules/mutate?timeout=10s": dial tcp 10.106.113.6:443: connect: connection refused
+E0731 10:01:52.725787       1 dispatcher.go:214] "Unhandled Error" err="failed calling webhook \"prometheusrulemutate.monitoring.coreos.com\": failed to call webhook: Post \"https://prometheus-kube-prometheus-operator.default.svc:443/admission-prometheusrules/mutate?timeout=10s\": dial tcp 10.106.113.6:443: connect: connection refused" logger="UnhandledError"
+W0731 10:01:52.914267       1 dispatcher.go:205] Failed calling webhook, failing open prometheusrulemutate.monitoring.coreos.com: failed calling webhook "prometheusrulemutate.monitoring.coreos.com": failed to call webhook: Post "https://prometheus-kube-prometheus-operator.default.svc:443/admission-prometheusrules/validate?timeout=10s": dial tcp 10.106.113.6:443: connect: connection refused
+E0731 10:01:52.914453       1 dispatcher.go:213] "Unhandled Error" err="failed calling webhook \"prometheusrulemutate.monitoring.coreos.com\": failed to call webhook: Post \"https://prometheus-kube-prometheus-operator.default.svc:443/admission-prometheusrules/validate?timeout=10s\": dial tcp 10.106.113.6:443: connect: connection refused" logger="UnhandledError"
+I0731 10:01:52.916397       1 controller.go:667] quota admission added evaluator for: prometheusrules.monitoring.coreos.com
+E0731 10:02:09.987309       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 10:02:10.040206       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:02:10.078026       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 10:02:10.091127       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:02:10.092581       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="104.200295ms" method="GET" path="/api/v1/namespaces/demo-namespace/events" result=null
+W0731 10:02:10.925962       1 dispatcher.go:210] Failed calling webhook, failing open prometheusrulemutate.monitoring.coreos.com: failed calling webhook "prometheusrulemutate.monitoring.coreos.com": failed to call webhook: Post "https://prometheus-kube-prometheus-operator.default.svc:443/admission-prometheusrules/mutate?timeout=9s": dial tcp 10.106.113.6:443: connect: connection refused
+E0731 10:02:10.926486       1 dispatcher.go:214] "Unhandled Error" err="failed calling webhook \"prometheusrulemutate.monitoring.coreos.com\": failed to call webhook: Post \"https://prometheus-kube-prometheus-operator.default.svc:443/admission-prometheusrules/mutate?timeout=9s\": dial tcp 10.106.113.6:443: connect: connection refused" logger="UnhandledError"
+W0731 10:02:11.413066       1 dispatcher.go:205] Failed calling webhook, failing open prometheusrulemutate.monitoring.coreos.com: failed calling webhook "prometheusrulemutate.monitoring.coreos.com": failed to call webhook: Post "https://prometheus-kube-prometheus-operator.default.svc:443/admission-prometheusrules/validate?timeout=10s": dial tcp 10.106.113.6:443: connect: connection refused
+E0731 10:02:11.413176       1 dispatcher.go:213] "Unhandled Error" err="failed calling webhook \"prometheusrulemutate.monitoring.coreos.com\": failed to call webhook: Post \"https://prometheus-kube-prometheus-operator.default.svc:443/admission-prometheusrules/validate?timeout=10s\": dial tcp 10.106.113.6:443: connect: connection refused" logger="UnhandledError"
+E0731 10:02:12.291619       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"context canceled\"}: context canceled" logger="UnhandledError"
+E0731 10:02:12.299327       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:02:12.300780       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 10:02:12.321595       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:02:12.325142       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="33.400209ms" method="GET" path="/api/v1/namespaces/demo-namespace/events" result=null
+I0731 10:02:32.395385       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+W0731 10:02:35.136051       1 controller.go:139] slow openapi aggregation of "servicemonitors.monitoring.coreos.com": 1.010456633s
+E0731 10:02:43.662571       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 10:02:43.928522       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 10:02:43.978967       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 10:02:44.071856       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 10:02:50.007314       1 controller.go:195] "Failed to update lease" err="Operation cannot be fulfilled on leases.coordination.k8s.io \"apiserver-eqt674mfxb4j56mrjjkoe7b7ii\": the object has been modified; please apply your changes to the latest version and try again"
+E0731 10:05:23.214709       1 upgradeaware.go:427] Error proxying data from client to backend: websocket: close 1006 (abnormal closure): unexpected EOF
+E0731 10:05:25.266834       1 upgradeaware.go:427] Error proxying data from client to backend: websocket: close 1006 (abnormal closure): unexpected EOF
+E0731 10:05:26.600646       1 upgradeaware.go:427] Error proxying data from client to backend: websocket: close 1006 (abnormal closure): unexpected EOF
+W0731 10:07:35.721117       1 controller.go:139] slow openapi aggregation of "alertmanagers.monitoring.coreos.com": 1.58562949s
+I0731 10:11:19.864742       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 10:11:20.188581       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="6.783766138s" method="GET" path="/metrics" result=null
+E0731 10:11:59.920192       1 upgradeaware.go:427] Error proxying data from client to backend: websocket: close 1006 (abnormal closure): unexpected EOF
+I0731 10:12:32.364870       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+E0731 10:15:59.379685       1 authentication.go:75] "Unable to authenticate the request" err="[invalid bearer token, context canceled]"
+E0731 10:15:59.492608       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:15:59.526177       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 10:15:59.533251       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:15:59.544052       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="147.110633ms" method="POST" path="/apis/authorization.k8s.io/v1/selfsubjectaccessreviews" result=null
+I0731 10:16:39.337896       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 10:16:43.077497       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="89.869856ms" method="GET" path="/metrics" result=null
+E0731 10:16:43.080816       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/metrics" auditID="bed28428-a555-4a6a-902e-cb52f0bc8e99"
+I0731 10:17:14.108065       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 10:17:14.436472       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="6.788µs" method="GET" path="/metrics" result=null
+W0731 10:17:35.358970       1 controller.go:139] slow openapi aggregation of "alertmanagers.monitoring.coreos.com": 1.12379873s
+I0731 10:22:32.483023       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+W0731 10:22:35.651129       1 controller.go:139] slow openapi aggregation of "alertmanagerconfigs.monitoring.coreos.com": 1.407908525s
+I0731 10:22:36.108085       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+W0731 10:22:41.385348       1 controller.go:139] slow openapi aggregation of "scrapeconfigs.monitoring.coreos.com": 5.505422344s
+W0731 10:22:43.836546       1 controller.go:139] slow openapi aggregation of "servicemonitors.monitoring.coreos.com": 2.44668494s
+E0731 10:22:44.018817       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="7.077µs" method="GET" path="/metrics" result=null
+E0731 10:22:44.040498       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/metrics" auditID="ee488fd5-fe76-4ed0-92f4-e6530b4ae0d7"
+W0731 10:22:44.950033       1 controller.go:139] slow openapi aggregation of "alertmanagers.monitoring.coreos.com": 1.072585123s
+E0731 10:22:49.698826       1 finisher.go:175] "Unhandled Error" err="FinishRequest: post-timeout activity - time-elapsed: 6.509846ms, panicked: false, err: context canceled, panic-reason: <nil>" logger="UnhandledError"
+E0731 10:22:49.707235       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:22:49.710138       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 10:22:49.715470       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:22:49.723316       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="138.193535ms" method="PUT" path="/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/minikube" result=null
+I0731 10:23:38.708274       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+E0731 10:23:44.278699       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/metrics" auditID="74ceeb42-27cd-4b02-8fc8-89ded5d4d1d0"
+E0731 10:23:44.406037       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="186.27282ms" method="GET" path="/metrics" result=null
+E0731 10:23:44.558027       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: http2.StreamError{StreamID:0x23, Code:0x8, Cause:error(nil)}: stream error: stream ID 35; CANCEL" logger="UnhandledError"
+E0731 10:23:44.752552       1 writers.go:123] "Unhandled Error" err="apiserver was unable to write a JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:23:44.755220       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"http: Handler timeout\"}: http: Handler timeout" logger="UnhandledError"
+E0731 10:23:44.760628       1 writers.go:136] "Unhandled Error" err="apiserver was unable to write a fallback JSON response: http: Handler timeout" logger="UnhandledError"
+E0731 10:23:44.808070       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="342.107636ms" method="PUT" path="/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath" result=null
+E0731 10:25:41.811778       1 upgradeaware.go:441] Error proxying data from backend to client: websocket: close sent
+I0731 10:32:32.526671       1 cidrallocator.go:277] updated ClusterIP allocator for Service CIDR 10.96.0.0/12
+E0731 10:36:37.079900       1 wrap.go:53] "Timeout or abort while handling" logger="UnhandledError" method="GET" URI="/metrics" auditID="530194b8-6977-4b3d-81ad-5f2ad9aadbb4"
+E0731 10:36:37.156956       1 timeout.go:140] "Post-timeout activity" logger="UnhandledError" timeElapsed="245.65129ms" method="GET" path="/metrics" result=null
+I0731 10:37:36.683858       1 metrics.go:299] "Failed to get storage metrics" storage_cluster_id="etcd-0" err="context deadline exceeded"
+W0731 10:37:37.121877       1 controller.go:139] slow openapi aggregation of "alertmanagerconfigs.monitoring.coreos.com": 2.47297192s
+W0731 10:37:39.822854       1 controller.go:139] slow openapi aggregation of "scrapeconfigs.monitoring.coreos.com": 2.371754088s
+W0731 10:37:43.203051       1 controller.go:139] slow openapi aggregation of "thanosrulers.monitoring.coreos.com": 1.050445654s
+E0731 10:37:52.969548       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 10:37:53.550132       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 10:37:54.627479       1 status.go:71] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: rpctypes.EtcdError{code:0xe, desc:\"etcdserver: request timed out\"}: etcdserver: request timed out" logger="UnhandledError"
+E0731 10:37:54.783711       1 controller.go:195] "Failed to update lease" err="etcdserver: request timed out"
+E0731 10:37:58.829186       1 controller.go:195] "Failed to update lease" err="Operation cannot be fulfilled on leases.coordination.k8s.io \"apiserver-eqt674mfxb4j56mrjjkoe7b7ii\": the object has been modified; please apply your changes to the latest version and try again"
