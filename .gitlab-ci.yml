@@ -388,27 +388,5 @@ cleanup_artifacts:
   allow_failure: true
 
 # =============================================================================
-# NOTIFICATIONS
-# =============================================================================
-
-notify_success:
-  stage: .post
-  image: curlimages/curl:latest
-  script:
-    - echo "Pipeline completed successfully!"
-    - echo "Summary:"
-    - echo "  - Stages completed: $CI_JOB_STAGE"
-    - echo "  - Total jobs: $CI_PIPELINE_ID"
-    - echo "  - Project: $CI_PROJECT_NAME"
-    - echo "  - Branch: $CI_COMMIT_REF_NAME"
-  when: on_success
-
-notify_failure:
-  stage: .post
-  image: curlimages/curl:latest
-  script:
-    - echo "Pipeline failed!"
-    - echo "Failed job: $CI_JOB_NAME"
-    - echo "Stage: $CI_JOB_STAGE"
-    - echo "Pipeline URL: $CI_PIPELINE_URL"
-  when: on_failure 
+# PIPELINE COMPLETE
+# ============================================================================= 
